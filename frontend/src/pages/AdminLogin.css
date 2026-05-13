@@ -1,0 +1,81 @@
+/* =====================================================
+   ADMIN LOGIN CSS
+   ===================================================== */
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f23 0%, #1E1E3F 50%, #3730a3 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.login-bg-blur {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: rgba(79,70,229,0.15);
+  filter: blur(80px);
+  top: -100px;
+  right: -100px;
+  pointer-events: none;
+}
+.login-bg-blur-2 {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.08);
+  filter: blur(60px);
+  bottom: -50px;
+  left: -50px;
+  pointer-events: none;
+}
+.login-card {
+  background: rgba(255,255,255,0.97);
+  border-radius: var(--radius-xl);
+  padding: 2.75rem 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+  position: relative;
+  z-index: 1;
+}
+.login-logo {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 800;
+  margin: 0 auto 1.2rem;
+  box-shadow: 0 8px 24px rgba(79,70,229,0.35);
+}
+.login-card h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+.login-card .subtitle {
+  text-align: center;
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
+  margin-bottom: 2rem;
+}
+.login-footer {
+  text-align: center;
+  margin-top: 1.75rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+.login-footer a {
+  color: var(--color-primary);
+  font-weight: 600;
+}
