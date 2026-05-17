@@ -12,7 +12,12 @@ dotenv.config();
 const app = express();
 
 // ---- Middleware ----
-app.use(cors());
+// Allow requests from the Vite dev server (port 3000) and any deployed frontend
+app.use(cors({
+  origin: process.env.FRONTEND_URL || '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+}));
 app.use(express.json());
 
 // ---- Routes ----
